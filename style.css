@@ -1,0 +1,464 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color1: #04f5ff;
+    --color2: #e90052;
+    --color3: #ffffff;
+    --color4: #00ff85;
+    --color5: #38003c;
+
+    --Dove-gray: #666666;
+    --Aero-Blue: #AEFFF1;
+
+    --lightest-brown: #e5e5dc;
+    --darkest-brown: #201e20;
+
+    --moon-mist: #d3d6c3;
+    --kokoda: #5a5c4f;
+    
+}
+@font-face {
+    font-family: radikal ;
+    src: url('./fonts/Radikal/Nootype\ -\ Radikal\ Bold.otf');
+}
+@font-face {
+    font-family: radikal-light;
+    src: url('./fonts/Radikal/Nootype\ -\ Radikal\ Light.otf');
+}
+@font-face {
+    font-family: radikal-medium ;
+    src: url('./fonts/Radikal/Nootype\ -\ Radikal\ Medium.otf');
+}
+@font-face {
+    font-family: radikal-thin;
+    src: url('./fonts/Radikal/Nootype\ -\ Radikal\ Thin.otf');
+}
+@font-face {
+    font-family: radikal-ultra-thin;
+    src: url('./fonts/Radikal/Nootype\ -\ Radikal\ UltraThin.otf');
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--moon-mist);
+    color: white;
+    font-family: radikal;
+    color: var(--darkest-brown);
+    overflow-x: hidden;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+button{
+    border: none;    
+    background-color: var(--darkest-brown);
+    color: white;
+    font-family: radikal;
+    padding: 1.5rem 3rem;
+    font-size: 1.1rem;
+    border-radius: 0.8rem;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    margin-bottom: 5rem;
+    position: fixed;
+    background-color: var(--moon-mist);
+}
+.innerHeader{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+}
+li a{
+    color: var(--darkest-brown);
+    text-decoration: none;
+}
+li.Home{
+    background-color: var(--darkest-brown);
+    padding: 1rem 1.5rem;
+    border-radius: 0.3rem;
+}
+li.Home a{
+    color: white;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.innerMain{
+    margin-top: 10rem;
+    display: flex;
+    width: 65%;
+}
+.leftMain,.rightMain{
+    width: 50%;
+}
+.leftMain{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.leftMain p{
+    font-family: radikal-light;
+    color: var(--Dove-gray);
+    line-height: 1.6rem;
+}
+.leftMain button a img{
+    width: 20%;
+}
+.leftMain button a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.leftMain button{
+    align-self: flex-start;
+}
+.rightMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.rightMain img{
+    width: 60%;
+    border-radius: 50%;
+    border:  10px solid var(--darkest-brown);
+}
+.imgContainer{
+    display: flex;
+    justify-content: center;
+}
+.stackDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 8rem 0rem;
+}
+.innerStackDiv{
+    width: 65%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+.stacks{
+    display: flex;
+    gap: 1rem;
+}
+#nextIcon{
+    width: 50px;
+}
+.projectsDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0rem;
+}
+.innerProjectsDiv{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.projectBox-1,.projectBox-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.8rem;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    justify-content: space-between;
+}
+.card img{
+    width: 100%;
+    border-top-right-radius: 0.8rem;
+    border-top-left-radius: 0.8rem;
+}
+.buttonBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.buttonBox button{
+    height: 3rem;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darkest-brown);
+}
+.buttonBox button a img{
+    width: 60%;
+}
+.buttonBox button a{
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+}
+.cardDetails{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.cardDetails p{
+    font-family: radikal-light;
+    color: var(--Dove-gray);
+}
+.contactMe{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+}
+.innerContactMe{
+    padding: 5rem 0rem;
+    width: 65%;
+    display: flex;
+    background-color: var(--darkest-brown);
+    flex-direction: column;
+    gap: 5rem;
+}
+.innerContactMeMain{
+    display: flex;
+}
+.innerContactMeFooter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.writeUp{
+    width: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+.writeUp p{
+    font-family: radikal-light;
+    width: 80%;
+    font-size: 1.5rem;
+}
+.contactForm{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 50px;
+    
+}
+.contactForm input,textarea{
+    width: 80%;
+    border: none;
+    outline: none;
+    font-family: radikal-light;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 50px;
+}
+.contactForm input{
+    padding: 1rem 0rem;
+    border-radius: 50px;
+    
+}
+.contactForm button{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-radius:0;
+    padding: 1.2rem 2.5rem;
+    display: flex;
+    width: 35%;
+    gap: 1.5rem;
+    align-self: flex-start;
+   
+}
+.contactForm button:hover{
+    background-color: gray;
+   
+}
+.contactForm button img{
+    width: 30%;
+    
+}
+.buttonContainer{
+    width: 80%;
+    border-radius: 50px;
+   
+}
+textarea{
+    border-bottom: 5px solid var(--darkest-brown);
+}
+.innerContactMeFooter img:hover{
+    transform: scale(1.5);
+    transition: all ease-in-out 0.1s;
+}
+.navMobile{
+    background-color: var(--darkest-brown);
+    width: 65%;
+    display: none;
+    justify-content: center;
+    padding: 1.5rem 0rem;
+    border-radius: 2rem;
+    text-decoration: underline;
+}
+.navMobile li a{
+    color: white;
+}
+.navMobile li a:hover{
+    color: var(--Dove-gray);
+}
+li a:hover{
+    color: white;
+}
+@media screen and (max-width: 950px){
+    .navMobile{
+        display: flex;
+        position: fixed;
+        top: 90%;
+    }
+    .nav{
+        display: none;
+    }
+    .innerHeader{
+        width: 80%;
+    }
+
+    .innerMain{
+        flex-direction: column-reverse;
+        width: 80%;
+        gap: 5rem;
+    }
+    .leftMain,.rightMain{
+        width: 100%;
+    }
+    .leftMain{
+        align-items: center;
+    }
+    .leftMain button{
+        align-self: center;
+    }
+    .leftMain p{
+        text-align: center;
+    }
+    .innerStackDiv{
+        width: 80%;
+    }
+    .innerProjectsDiv{
+        width: 80%;
+    }
+    .card{
+        width: 47%;
+    }
+    .buttonBox button{
+        width: 45%;
+    }
+    .buttonBox button a{
+        gap: 1rem;
+    }
+    .cardDetails{
+        width: 90%;
+    }
+    .innerContactMe{
+        width: 80%;
+    }
+    .innerContactMeMain{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .writeUp,.contactForm{
+        width: 100%;
+    }
+    .writeUp p{
+        text-align: center;
+    }
+    .contactForm button{
+        align-items: center;
+    }
+}
+@media screen and (max-width: 600px){
+    .projectBox-1,.projectBox-2{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .innerHeader{
+        width: 90%;
+    }
+    .innerContactMeFooter{
+        gap: 1rem;
+    }
+    .innerContactMeFooter img{
+        transform: scale(0.7);
+    }
+    .navMobile{
+        gap: 1rem;
+        width: 90%;
+    }
+    .card{
+        width: 100%;
+    }
+    .innerStackDiv{
+        width: 90%;
+    }
+    .stacks{
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    .stacks img{
+        width: auto;
+        /* transform: scale(0.6); */
+    }
+    .contactForm button{
+        width: 45%;
+        padding: 0.3rem;
+    }
+    .innerMain{
+        margin-top: 6rem;
+    }
+    textarea{
+        height: 6rem;
+    }
+    .contactForm input{
+        padding: 0.4rem 0rem;
+    }
+}
